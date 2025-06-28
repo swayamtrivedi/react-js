@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>home</title>
+</head>
+
+<body>
+
+
+    <center>
+        <h1 align="center">enter your name</h1>
+        <hr> first name
+        <input type="text" name="firstname" id="first"><br> <br> last name
+        <input type="text" name="lastname" id="last"><br> <br>
+        <button onclick="wap()">enter name now </button>
+
+
+        <script>
+            function wap() {        
+                var x = document.getElementById("first").value;        
+                var y = document.getElementById("last").value; 
+                document.write("your goodname is" + " " + x + " " + y);               
+            }
+        </script>
+
+</body>
+
+</html>

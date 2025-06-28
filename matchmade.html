@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>home</title>
+</head>
+
+<body>
+
+
+    <form>
+        Mobile Number: <input type="text" id="mobile" placeholder="Enter your Number"><br>        Re-enter Mobile Number: <input type="text" id="reMobile" placeholder="Re-Enter your number"><br><br>         <input type="submit" value="login" onclick="return wap()"
+        />     </form>
+
+
+    <script>
+        function wap() {      
+            var mobile = document.getElementById("mobile").value;
+            var reMobile = document.getElementById("reMobile").value;
+
+                  
+            if (mobile === reMobile) {
+                alert("Login successful!");  
+                return true;      
+            } else {        
+                alert("Mobile numbers do not match!");        
+                return false;      
+            }    
+        }
+    </script>
+
+</body>
+
+</html>
